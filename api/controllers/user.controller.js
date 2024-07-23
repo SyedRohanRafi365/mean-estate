@@ -1,3 +1,4 @@
+//done
 import bcryptjs from 'bcryptjs';
 import User from '../models/user.model.js';
 import { errorHandler } from '../utils/error.js';
@@ -62,7 +63,7 @@ export const getUserListings = async (req, res, next) => {
     return next(errorHandler(401, 'You can only view your own listings!'));
   }
 };
-//note: incorrect import below? >
+
 export const getUser = async (req, res, next) => {
   try {
     
@@ -77,3 +78,4 @@ export const getUser = async (req, res, next) => {
     next(error);
   }
 };
+
